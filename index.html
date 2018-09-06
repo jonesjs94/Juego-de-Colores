@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juego de colores</title>
+	<meta charset="utf-8">
+	    <!--EL VIEWPORT DEL BOOTSRAP -->
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- MI CSS -->
+	<link rel="stylesheet" type="text/css" href="juegodecolorescris.css">
+</head>
+<body>
+	<header>
+		<h1>The great <br> GUESSING GAME</h1>
+		<input type="button" value="Nuevo juego" class="volver-a-jugar" onclick="jugarDeNuevo()" id="juegoNuevo">
+	</header>
+
+	<section class="section-menu">
+
+		
+		<input type="button" id="facil" onclick="darColorFacil()"  value="Fácil"class="menu">
+		<input type="button" id="normal" onclick="darColorNormal()" value="Normal" class="menu">
+		<input type="button" id="dificil" onclick="darColorDificil()"value="Dificil" class="menu">
+		
+	</section>
+
+	<section class="section-color-a-buscar">
+		
+	<h2>
+			<span id="color1">Elige</span>
+			<span id="color2">la</span>
+			<span id="color3">dificultad</span>
+	</h2>
+			<input type="button" id="color" class="color-a-buscar">
+	
+
+	</section>
+
+
+	<section class="buttons-sections">
+
+		<input type="button" onclick="buscarCoincidencia1()" id="button-color1" class="button-color">
+		<input type="button" onclick="buscarCoincidencia2()" id="button-color2" class="button-color">
+		<input type="button" onclick="buscarCoincidencia3()" id="button-color3" class="button-color">
+		
+	</section>
+	
+	<section class="buttons-sections">
+
+		<input type="button" onclick="buscarCoincidencia4()" id="button-color4" class="button-color">
+		<input type="button" onclick="buscarCoincidencia5()" id="button-color5" class="button-color">
+		<input type="button" onclick="buscarCoincidencia6()" id="button-color6" class="button-color">
+		
+	</section>
+
+	<div class="div-resultado">
+		<input type="button" id="resultado" class="resultado" value="Resultado">
+		<input type="button" id="puntaje" class="puntaje" value="0">
+	</div>
+
+	<!-- jQuery library -->
+    <script src="jquery-3.2.1.slim.min.js"></script>
+
+   	<!-- Popper -->
+ 	<script src="popper.min.js"></script>
+
+ 	<!-- Latest compiled and minified Bootstrap JavaScript -->
+ 	<script src="bootstrap.min.js"></script>
+
+ 	<!-- DIFICULTADES -->
+	<script src="modofacil.js" type="text/javascript" charset="utf-8"></script>
+	<script src="modonormal.js" type="text/javascript" charset="utf-8"></script>
+	<script src="mododificil.js" type="text/javascript" charset="utf-8"></script>
+	
+</body>
+</html>
