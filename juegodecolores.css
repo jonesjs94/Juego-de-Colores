@@ -1,0 +1,181 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background-color: black;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	background: rgb(155, 155, 155);
+	align-items: center;
+}
+
+h1, h2{
+	margin: 0;
+	text-align: center;
+}
+
+h2 {
+		color: white;
+	}
+
+.volver-a-jugar {
+	border: none;
+	text-align: center;
+	color:white;
+	background-color: rgb(25,25,25);
+	outline: none;
+	cursor: pointer;
+	width: 25%;
+	height: 50px;
+	border-radius: 50% 50% 0 0;
+}
+
+.volver-a-jugar:hover {
+	background-color: rgba(0,0,0,0.7);
+	transition: all 0.3s;
+}
+/*el boton chiquito y el h2 RGB*/
+
+	
+
+.section-color-a-buscar {
+	display: flex;
+	justify-content: center;
+	height: 100px;
+}
+
+.color-a-buscar {
+	border: none;
+	border-radius: 10%;
+	width: 50px;
+	height: 50%;
+	outline: none;
+	cursor: not-allowed;
+	opacity: 0;
+	transition: 1s;
+}
+
+
+
+
+
+/*los botones de colores a clickear y sus secciones*/
+
+.buttons-sections {
+	display: flex;
+	height: 200px;
+	justify-content: space-around;
+} /*Las 2 secciones de botones*/
+
+
+.button-color {
+	width: 150px;
+	height: 150px;
+	border: none;
+	border-radius: 20%;
+	outline: none;
+	transition: all 0.2s;
+	background-color: grey;
+	margin: 1%;
+	display: block;
+} /*Estilo de cada boton*/
+
+.button-color:hover {
+	transform: scale(0.9);
+} 
+
+.button-color:active {
+	transform: scale(1);
+}
+
+/*menu del juego*/
+.section-menu {
+	display: flex;
+}
+
+.menu {
+	width: 100%;
+	height: 50px;
+	border: none;
+	text-align: center;
+	color:white;
+	background-color: rgb(25,25,25);
+	outline: none;
+	cursor: pointer;
+	opacity: 1;
+} /*El estilo del menu*/
+
+.menu:hover {
+	background-color: rgba(0,0,0,0.7);
+	transition: all 0.3s;
+}
+
+.menu::after {
+	opacity: 0.8;
+}
+
+
+/*Resultado del juego*/
+
+.div-resultado {
+	display: flex;
+	justify-content: center;
+}
+
+.resultado {
+	outline: none;
+	text-align: center;
+	cursor: none;
+	border: none;
+	width: 200px;
+	height: 200px;
+	transition: .5s;
+	font-size: 0px;
+}
+
+.ganaste {
+	background-color: green;
+	outline: none;
+	text-align: center;
+	cursor: none;
+	border: none;
+	border-radius:20px;
+	width: 200px;
+	height: 200px;
+	transition: .5s;
+	font-size: 30px;
+}
+
+.perdiste {
+	background-color: red;
+	outline: none;
+	text-align: center;
+	cursor: none;
+	border: none;
+	border-radius:20px;
+	width: 200px;
+	height: 200px;
+	transition: .5s;
+	font-size: 30px;
+}
+
+.puntaje {
+	background-color: black;
+	color: white;
+	outline: none;
+	text-align: center;
+	cursor: none;
+	border: none;
+	width: 200px;
+	height: 200px;
+	transition: .5s;
+	font-size: 80px;
+}
+
+
+
+.modoFacil {
+	
+}
