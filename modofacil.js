@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
 
 //Variables globales
 var arrayButtonsId = ["color", "button-color1", "button-color2", "button-color3", "button-color4", "button-color5", "button-color6"];
@@ -68,11 +68,11 @@ for (i=0; i < arrayButtonsId.length ; i++) {
 	color2 =document.getElementById("color2").innerHTML = "la"
 	color3 =document.getElementById("color3").innerHTML = "dificultad"
 	
-}
+};
 
 
 
-function darColorFacil () {
+function darColorFacil() {
 	//le damos el valor "on" para luego usarlo en un IF
 	facil = "on";
 
@@ -152,7 +152,7 @@ function buscarCoincidencia1() {
 			} else {document.getElementById("resultado").value = 'Le pifiaste';
 					document.getElementById("resultado").className = 'perdiste';
 					document.getElementById("button-color1").style.display = 'none';
-					puntosAlPerder();}}
+					puntosAlPerder();}};
 
 function buscarCoincidencia2() {
 	if (colorPrincipal === colorB2) {
@@ -163,7 +163,7 @@ function buscarCoincidencia2() {
 			} else {document.getElementById("resultado").value = 'Le pifiaste';
 					document.getElementById("resultado").className = 'perdiste';
 					document.getElementById("button-color2").style.display = 'none';
-					puntosAlPerder();}}
+					puntosAlPerder();}};
 
 function buscarCoincidencia3() {
 	if (colorPrincipal === colorB3) {
@@ -174,7 +174,7 @@ function buscarCoincidencia3() {
 			} else {document.getElementById("resultado").value = 'Le pifiaste';
 					document.getElementById("resultado").className = 'perdiste';
 					document.getElementById("button-color3").style.display = 'none';
-					puntosAlPerder();}}
+					puntosAlPerder();}};
 
 function buscarCoincidencia4() {
 	if (colorPrincipal === colorB4) {
@@ -185,7 +185,7 @@ function buscarCoincidencia4() {
 			} else {document.getElementById("resultado").value = 'Le pifiaste';
 					document.getElementById("resultado").className = 'perdiste';
 					document.getElementById("button-color4").style.display = 'none';
-					puntosAlPerder();}}
+					puntosAlPerder();}};
 
 function buscarCoincidencia5() {
 	if (colorPrincipal === colorB5) {
@@ -196,7 +196,7 @@ function buscarCoincidencia5() {
 			} else {document.getElementById("resultado").value = 'Le pifiaste';
 					document.getElementById("resultado").className = 'perdiste';
 					document.getElementById("button-color5").style.display = 'none';
-					puntosAlPerder();}}
+					puntosAlPerder();}};
 
 function buscarCoincidencia6() {
 	if (colorPrincipal === colorB6) {
@@ -207,14 +207,14 @@ function buscarCoincidencia6() {
 			} else {document.getElementById("resultado").value = 'Le pifiaste';
 					document.getElementById("resultado").className = 'perdiste';
 					document.getElementById("button-color6").style.display = 'none';
-					puntosAlPerder();}}
+					puntosAlPerder();}};
 
 //busca las dificultades y aplica los reseteos correspondientes
 function resetear() {
 	if (facil === "on") {
 		resetearColoresFacil();} 
 		else if (normal === "on") {resetearColoresNormal();} else {resetearColoresDificil(); }
-}
+};
 
  //esta funcion va a seleccionar nuevos colores a los 7 botones
 function resetearColoresFacil() {
@@ -243,8 +243,8 @@ switch (colorPrincipal) {
 			case 3:
 				colorPrincipal = document.getElementById("color").style.backgroundColor = colorB3; 
 				break;	
-			 }
-}
+			 };
+};
 
 
 function resetearColoresNormal() {
@@ -284,7 +284,7 @@ switch (colorPrincipal) {
 				colorPrincipal = document.getElementById("color").style.backgroundColor = colorB6; 
 				break;		
 			 }
-}
+};
 
 
 // Esta funcion suma 1 al puntaje en facil y 2 al normal
@@ -300,7 +300,7 @@ function puntosAlGanar() {
 			else {
 				puntos += 4;
 			document.getElementById("puntaje").value = puntos;}
-	}
+	};
 
 //Esta funcion resta 1 al puntaje en facil y 2 al normal
 function puntosAlPerder() {
@@ -314,9 +314,4 @@ function puntosAlPerder() {
 			else {
 				puntos -= 4;
 			document.getElementById("puntaje").value = puntos;}
-}
-
-
-
-
-}); //TERMINA DOCUMENT READY
+	};

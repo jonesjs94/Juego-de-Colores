@@ -7,17 +7,18 @@ body {
 header {
 	display: flex;
 	flex-direction: column;
-	background: rgb(155, 155, 155);
+	background: #AEE0F0;
 	align-items: center;
 }
 
 h1, h2{
 	margin: 0;
 	text-align: center;
+	padding: 20px;
 }
 
 h2 {
-		color: white;
+	color: white;
 	}
 
 .volver-a-jugar {

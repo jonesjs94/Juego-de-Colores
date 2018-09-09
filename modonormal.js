@@ -1,7 +1,4 @@
 
-$(document).ready(function(){
-
-
 function darColorNormal()  {
 	//le damos el valor "on" para luego usarlo en un IF
 	normal = "on";
@@ -70,4 +67,3 @@ function darColorNormal()  {
 
 	}
 
-}); //TERMINA DOCUMENT READY

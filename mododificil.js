@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
 
 var intervalo;
 var arraySixButtons = ["button-color1", "button-color2", "button-color3", "button-color4", "button-color5", "button-color6"];
@@ -205,4 +205,3 @@ function resetearColoresDificil() {
 			 }
 }
 
-}); //TERMINA DOCUMENT READY
